@@ -3,31 +3,310 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #fff;
+  color: #1c1d1e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.fixedCenterY {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fixedCenterX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fixedCenterXnY {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.apple-light {
+  font-family: apple-light;
+}
+
+@font-face {
+  font-family: apple-light;
+  src: url(/apple-light.otf);
+}
+
+.apple-regular {
+  font-family: apple-regular;
+}
+
+@font-face {
+  font-family: apple-regular;
+  src: url(/apple-regular.otf);
+}
+
+.apple-medium {
+  font-family: apple-medium;
+}
+
+@font-face {
+  font-family: apple-medium;
+  src: url(/apple-medium.otf);
+}
+
+.apple-semibold {
+  font-family: apple-semibold;
+}
+
+@font-face {
+  font-family: apple-semibold;
+  src: url(/apple-semibold.otf);
+}
+
+.apple-semibold-i {
+  font-family: apple-semibold-i;
+}
+
+@font-face {
+  font-family: apple-semibold-i;
+  src: url(/apple-semibold-i.otf);
+}
+
+.apple-bold {
+  font-family: apple-bold;
+}
+
+@font-face {
+  font-family: apple-bold;
+  src: url(/apple-bold.otf);
+}
+
+.texto {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*Navbar ________________________________________________*/
+
+.nav-top-container {
+  height: 44px;
+  width: 100%;
+  background-color: #1c1d1e;
+  color: white;
+}
+
+.nav-top {
+  max-width: 1150px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.nav-option {
+  color: #bcbcbc;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  &:hover {
+    color: #fff;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-bottom-container {
+  height: 53px;
+  color: black;
+  width: 100%;
+  background-color: #ffffffe0;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.nav-bottom {
+  max-width: 1150px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-option2 {
+  color: #575757;
+  user-select: none;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  &:hover {
+    color: #0167cc;
   }
+}
+
+.buy-btn {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  background-color: #0071e3;
+  border-radius: 9999px;
+  color: white;
+  padding-left: 13px;
+  padding-right: 13px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  &:hover {
+    background-color: #0058b1;
+  }
+}
+
+.bar {
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 100ms;
+}
+
+/*Hero ________________________________________________*/
+
+.h-title {
+  font-size: 17vw;
+  letter-spacing: -0.02em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  line-height: 1;
+}
+
+.h-image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+}
+
+.h-image {
+  aspect-ratio: 1 / 1;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.h-subtitle {
+  line-height: 1.25;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.025em;
+  text-wrap: balance;
+}
+
+.h-subtitle2 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  line-height: 1;
+}
+
+.play-btn {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  border: 1px solid #1c1d1e;
+  line-height: 1;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlayText {
+  position: sticky;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/*Video ________________________________________________*/
+
+.v-btn-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 145px;
+  text-align: center;
+  width: 100%;
+}
+
+.v-title {
+  font-size: 68px;
+  line-height: 64px;
+  color: white;
+}
+
+.v-btn {
+  height: 60px;
+  background-color: white;
+  border-radius: 9999px;
+  font-family: "apple-bold";
+  font-size: 17px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.25rem;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  line-height: 1;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pause-btn {
+  width: 2.15rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
