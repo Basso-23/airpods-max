@@ -17,21 +17,21 @@ const Video = () => {
 
   return (
     <section>
-      <div className="relative ">
+      <div className="relative">
         <video ref={videoRef} width="100%" autoPlay loop muted>
           <source src="/video.mp4" type="video/mp4" />
         </video>
 
         <button
           onClick={handlePlayPause}
-          className="pause-btn absolute sm:bottom-9 sm:mx-[40px] bottom-4 mx-[10px] right-0"
+          className="sm:bottom-9 bottom-4 sm:mx-[40px] mx-[10px] pause-btn"
         >
           {isPlaying ? (
             <div>
               <Pause />
             </div>
           ) : (
-            <div className=" mr-[-2px]">
+            <div className="mr-[-2px]">
               <Play2 />
             </div>
           )}

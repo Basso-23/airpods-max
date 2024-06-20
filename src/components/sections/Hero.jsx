@@ -18,10 +18,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="sm:mb-28 mb-16 min-h-screen w-full flex items-center justify-center">
+    <section className="sm:mb-28 mb-16 h-section">
       {/*//*DESKTOP /////////////////////////////////////////////////////////////////////////////*/}
-      <div className="sm:flex sm:flex-col hidden w-full pt-[97px] items-center">
-        <div className="w-[45%] aspect-square mt-[25px] relative">
+      <div className="sm:flex sm:flex-col hidden h-desktop-container">
+        <div className="h-desktop">
           <m.div
             initial={{ scale: 1.4, opacity: 1 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -32,7 +32,7 @@ const Hero = () => {
             style={{
               backgroundImage: "url(https://i.imgur.com/IWW2LuU.png)",
             }}
-            className="bg-center bg-contain bg-no-repeat aspect-square w-full absolute z-40"
+            className="h-desktop-image"
           ></m.div>
 
           <m.div
@@ -48,14 +48,14 @@ const Hero = () => {
           </m.div>
         </div>
 
-        <div className="h-subtitle mt-24 apple-semibold text-[min(3.8vw,32px)] md:max-w-[1100px] max-w-[600px] 2xl:px-[85px] sm:px-[40px] px-[12px]">
+        <div className="md:max-w-[1100px] max-w-[600px] 2xl:px-[85px] sm:px-[40px] px-[12px] h-subtitle text-[min(3.8vw,32px)] mt-24 apple-semibold">
           Introducing AirPods Max — a perfect balance of exhilarating
           high-fidelity audio and the effortless magic of AirPods. The ultimate
           personal listening experience is here.
         </div>
 
-        <div className="apple-semibold sm:text-[24px] text-[18px] h-subtitle2">
-          <div className=" cursor-pointer hover:underline">
+        <div className="sm:text-[24px] text-[18px] apple-semibold h-subtitle2">
+          <div className="cursor-pointer hover:underline">
             Watch <span className="apple-semibold-i">Journey into Sound</span>
           </div>
           <div className="play-btn">
@@ -69,7 +69,7 @@ const Hero = () => {
       {/*//*MOBILE /////////////////////////////////////////////////////////////////////////////*/}
       <div className="sm:hidden block pt-[150px]">
         <div className="w-full mt-[-56px]">
-          <div className="pt-[55px] flex justify-center overflow-x-clip">
+          <div className="h-mobile">
             <m.div
               initial={{ scale: 1.4, opacity: 1 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -88,14 +88,14 @@ const Hero = () => {
           <div className="apple-semibold text-[50px] text-center">
             AirPods Max
           </div>
-          <div className="apple-semibold sm:text-[31px] text-[20px] 2xl:px-[85px] sm:px-[40px] px-[12px] h-subtitle">
+          <div className="sm:text-[31px] text-[20px] 2xl:px-[85px] sm:px-[40px] px-[12px] apple-semibold h-subtitle">
             Introducing AirPods Max — a perfect balance of exhilarating
             high-fidelity audio and the effortless magic of AirPods. The
             ultimate personal listening experience is here.
           </div>
 
-          <div className="apple-semibold sm:text-[24px] text-[18px] h-subtitle2">
-            <div className=" cursor-pointer hover:underline">
+          <div className="sm:text-[24px] text-[18px] apple-semibold h-subtitle2">
+            <div className="cursor-pointer hover:underline">
               Watch <span className="apple-semibold-i">Journey into Sound</span>
             </div>
             <div className="play-btn">

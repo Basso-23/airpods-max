@@ -26,7 +26,7 @@ const Navbar = () => {
       <>
         <div className="nav-top-container">
           {/*//*DESKTOP /////////////////////////////////////////////////////////////////////////////*/}
-          <div className="nav-top 2xl:px-[85px] sm:px-[40px] px-[12px] md:flex hidden">
+          <div className="2xl:px-[85px] sm:px-[40px] px-[12px] md:flex hidden nav-top">
             <div className="nav-option !text-[17px] -mt-1">
               <Apple />
             </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
           </div>
 
           {/*//*MOBILE /////////////////////////////////////////////////////////////////////////////*/}
-          <div className="nav-top 2xl:px-[85px] sm:px-[40px] px-[12px] md:hidden flex">
+          <div className="2xl:px-[85px] sm:px-[40px] px-[12px] md:hidden flex nav-top">
             <div className="nav-option !text-[20px] -mt-1">
               <Apple />
             </div>
@@ -72,18 +72,18 @@ const Navbar = () => {
             paddingTop === 44 ? "" : "max-w-[1150px]"
           }`}
         >
-          <div className="nav-bottom 2xl:px-[85px] sm:px-[40px] px-[12px]">
+          <div className="2xl:px-[85px] sm:px-[40px] px-[12px] nav-bottom">
             <div>
-              <div className="apple-semibold md:text-[20px] text-[19px] tracking-wide leading-none">
+              <div className="md:text-[20px] text-[19px] apple-semibold tracking-wide leading-none">
                 AirPods Max
               </div>
             </div>
             <div className="flex gap-6 items-center apple-light">
-              <div className="nav-option2 pointer-events-none sm:block hidden">
+              <div className="sm:block hidden nav-option2 pointer-events-none">
                 Overview
               </div>
-              <div className="nav-option2 sm:block hidden">Tech Specs</div>
-              <div className="nav-option2 sm:block hidden">Compare</div>
+              <div className="sm:block hidden nav-option2">Tech Specs</div>
+              <div className="sm:block hidden nav-option2">Compare</div>
               <div className="buy-btn">Buy</div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
 import Video from "@/components/sections/Video";
 import Texto1 from "@/components/sections/Texto1";
+import Airpods from "@/components/sections/Airpods";
 
 const Home = () => {
   return (
@@ -11,10 +12,11 @@ const Home = () => {
       <Hero />
       <Video />
       <Texto1 />
-      <div className=" min-h-screen"></div>
-      <div className=" min-h-screen"></div>
-      <div className=" min-h-screen"></div>
-      <div className=" min-h-screen"></div>
+      <Airpods />
+      <div className="min-h-screen"></div>
+      <div className="min-h-screen"></div>
+      <div className="min-h-screen"></div>
+      <div className="min-h-screen"></div>
     </main>
   );
 };

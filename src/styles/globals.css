@@ -181,6 +181,37 @@
 
 /*Hero ________________________________________________*/
 
+.h-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-desktop-container {
+  width: 100%;
+  padding-top: 97px;
+  align-items: center;
+}
+
+.h-desktop {
+  width: 45%;
+  aspect-ratio: 1 / 1;
+  margin-top: 25px;
+  position: relative;
+}
+
+.h-desktop-image {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  position: absolute;
+  z-index: 40;
+}
+
 .h-title {
   font-size: 17vw;
   letter-spacing: -0.02em;
@@ -196,21 +227,8 @@
   line-height: 1;
 }
 
-.h-image-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 40;
-}
-
 .h-image {
   aspect-ratio: 1 / 1;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -246,59 +264,14 @@
   align-items: center;
 }
 
-.overlayText {
-  position: sticky;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
-  z-index: 10;
+.h-mobile {
+  padding-top: 55px;
+  display: flex;
+  justify-content: center;
+  overflow-x: clip;
 }
 
 /*Video ________________________________________________*/
-
-.v-btn-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 145px;
-  text-align: center;
-  width: 100%;
-}
-
-.v-title {
-  font-size: 68px;
-  line-height: 64px;
-  color: white;
-}
-
-.v-btn {
-  height: 60px;
-  background-color: white;
-  border-radius: 9999px;
-  font-family: "apple-bold";
-  font-size: 17px;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.25rem;
-  cursor: pointer;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  line-height: 1;
-  &:hover {
-    opacity: 0.8;
-  }
-}
 
 .pause-btn {
   width: 2.15rem;
@@ -309,4 +282,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 0px;
+}
+
+/*Airpods ________________________________________________*/
+
+.a-desktop-image {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.a-desktop-info {
+  line-height: 1.25;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 100%;
+  font-size: 21px;
+  font-family: "apple-semibold";
+  color: #86868b;
+}
+
+.a-mobile-image {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.a-mobile-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "apple-semibold";
+  color: #ccc;
+  font-size: 18px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.a-bottom-info {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "apple-semibold";
+  color: #86868b;
+  width: 100%;
+  margin-top: 5rem;
+  line-height: 1.25;
 }
