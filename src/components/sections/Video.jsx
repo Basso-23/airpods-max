@@ -18,7 +18,15 @@ const Video = () => {
   return (
     <section>
       <div className="relative">
-        <video ref={videoRef} width="100%" autoPlay loop muted>
+        <video
+          style={{ objectFit: "cover" }}
+          className="sm:aspect-[16/9] aspect-[9/15] max-h-[675px]"
+          ref={videoRef}
+          width="100%"
+          autoPlay
+          loop
+          muted
+        >
           <source src="/video.mp4" type="video/mp4" />
         </video>
 
