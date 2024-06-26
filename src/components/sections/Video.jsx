@@ -20,7 +20,7 @@ const Video = () => {
       <div className="relative">
         <video
           style={{ objectFit: "cover" }}
-          className="sm:aspect-[16/9] aspect-[9/15] max-h-[675px]"
+          className="sm:aspect-[16/9] sm:max-h-[9999px] aspect-[9/15] max-h-[675px]"
           ref={videoRef}
           width="100%"
           autoPlay
