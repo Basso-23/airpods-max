@@ -3,7 +3,7 @@ const Pause = () => {
     <svg
       stroke="currentColor"
       fill="white"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 16 16"
       height="18px"
       width="18px"

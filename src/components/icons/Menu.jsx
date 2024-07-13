@@ -5,11 +5,11 @@ const Menu = () => {
         id="globalnav-menutrigger-bread-bottom"
         fill="none"
         stroke="currentColor"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         points="2 12, 16 12"
-        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom"
+        className="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom"
       >
         <animate
           id="globalnav-anim-menutrigger-bread-bottom-open"
@@ -38,11 +38,11 @@ const Menu = () => {
         id="globalnav-menutrigger-bread-top"
         fill="none"
         stroke="currentColor"
-        stroke-width="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         points="2 5, 16 5"
-        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top"
+        className="globalnav-menutrigger-bread globalnav-menutrigger-bread-top"
       >
         <animate
           id="globalnav-anim-menutrigger-bread-top-open"

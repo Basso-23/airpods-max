@@ -3,7 +3,7 @@ const Play2 = () => {
     <svg
       stroke="currentColor"
       fill="white"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 512 512"
       height="16px"
       width="16px"

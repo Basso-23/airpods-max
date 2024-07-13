@@ -5,7 +5,7 @@ import Apple from "../icons/Apple";
 import Menu from "../icons/Menu";
 
 const Navbar = () => {
-  const [paddingTop, setPaddingTop] = useState();
+  const [paddingTop, setPaddingTop] = useState(0);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
